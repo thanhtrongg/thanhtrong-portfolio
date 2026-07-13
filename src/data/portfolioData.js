@@ -93,13 +93,45 @@ export const education = [
 
 export const certifications = [
   {
-    name: 'Stanford University Algorithms Specialization',
-    issuer: 'Coursera',
+    name: 'Algorithms Specialization',
+    issuer: 'Stanford University',
     year: 2025,
+    detail: 'ID: KAVMZ0XKS0XX',
+  },
+  {
+    name: 'Java Servlet Development: From Basics to Real-World Projects',
+    issuer: 'EDUCBA',
+    year: 2026,
+    detail: 'ID: DPWXBJG25IG5',
+  },
+  {
+    name: 'User Experience Research and Design Specialization',
+    issuer: 'University of Michigan',
+    year: 2026,
+    detail: 'ID: WZXQ7TSUDFDD',
+  },
+  {
+    name: 'Web Design for Everybody: Basics of Web Development & Coding',
+    issuer: 'University of Michigan',
+    year: 2025,
+    detail: 'ID: KSGYIRLPETME',
+  },
+  {
+    name: 'Core Java',
+    issuer: 'LearnQuest',
+    year: 2025,
+    detail: 'ID: 1NIEN4WIPY1W',
+  },
+  {
+    name: 'Academic Skills for University Success',
+    issuer: 'The University of Sydney',
+    year: 2025,
+    detail: 'ID: IYR0NT4PDW9Z',
   },
   {
     name: 'IELTS Academic',
-    detail: 'Overall Band 5.5',
+    issuer: 'British Council / IDP',
     year: 2024,
+    detail: 'Overall Band 5.5',
   },
 ]

@@ -14,10 +14,10 @@ function BackgroundVideo() {
           playsInline
           preload="auto"
           onError={() => setHasError(true)}
-          className="absolute inset-0 h-full w-full object-cover opacity-80"
+          className="absolute inset-0 h-full w-full object-cover opacity-95"
         />
       ) : null}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/30" />
       <div
         className="absolute inset-0"
         style={{

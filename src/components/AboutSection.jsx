@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { personalInfo } from '../data/portfolioData'
-import { experience, skills } from '../data/portfolioData'
+import { experience, skills, certifications } from '../data/portfolioData'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 32 },
@@ -15,7 +15,7 @@ const stats = [
   { label: 'Repositories', value: '17+' },
   { label: 'Skills', value: Object.values(skills).flat().length },
   { label: 'Experience', value: experience.length },
-  { label: 'Certifications', value: '6+' },
+  { label: 'Certifications', value: certifications.length },
 ]
 
 function AboutSection() {

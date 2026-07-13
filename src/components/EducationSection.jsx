@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Award } from 'lucide-react'
 import { education, certifications } from '../data/portfolioData'
 import TiltCard from './TiltCard'
 
@@ -104,9 +105,7 @@ function EducationSection() {
               >
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center shrink-0 mt-0.5">
-                    <span className="text-white/50 text-xs font-semibold">
-                      {cert.year.toString().slice(2)}
-                    </span>
+                    <Award size={18} className="text-white/50" />
                   </div>
                   <div className="min-w-0">
                     <h4 className="text-base sm:text-lg font-heading text-white mb-1 truncate">

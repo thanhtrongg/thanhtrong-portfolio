@@ -17,7 +17,7 @@ function Hero() {
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-5 pt-28 text-center">
       <BackgroundVideo />
 
-      <div className="absolute inset-0 bg-black/45" />
+      <div className="absolute inset-0 bg-black/25" />
       <div
         className="absolute left-1/2 top-1/2 h-[700px] w-[700px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-30"
         style={{ background: 'radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%)' }}
