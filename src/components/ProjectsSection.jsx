@@ -34,7 +34,7 @@ const mainMetrics = [
 function ProjectCard({ project, accent = false, metrics }) {
   return (
     <TiltCard
-      className={`rounded-[2rem] p-6 sm:p-8 lg:p-10 ${
+      className={`rounded-[2rem] p-6 sm:p-8 lg:p-10 h-full ${
         accent
           ? 'bg-gradient-to-br from-white/[0.08] to-white/[0.02] border border-white/[0.12] shadow-[inset_0_1px_0_rgba(255,255,255,0.15),0_20px_60px_rgba(0,0,0,0.4)]'
           : 'bg-gradient-to-br from-white/[0.05] to-white/[0.01] border border-white/[0.08] shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]'
@@ -141,6 +141,7 @@ function ProjectsSection() {
               whileInView="visible"
               viewport={{ once: true, amount: 0.2 }}
               transition={{ delay: idx * 0.1 }}
+              className="h-full"
             >
               <ProjectCard project={project} />
             </motion.div>

@@ -59,7 +59,7 @@ function SkillsSection() {
                 className="h-full"
               >
                 <TiltCard
-                  className="h-full rounded-[2rem] p-6 sm:p-8 relative overflow-hidden"
+                  className="h-full rounded-[2rem] p-6 sm:p-8 relative"
                   style={{
                     background: 'linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02))',
                     backdropFilter: 'blur(24px)',
@@ -68,13 +68,6 @@ function SkillsSection() {
                     boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.1)',
                   }}
                 >
-                  <div
-                    className="absolute top-0 left-6 right-6 h-px"
-                    style={{
-                      background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent)',
-                    }}
-                  />
-
                   <div className="flex items-center gap-3 mb-6 relative z-10">
                     <div className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center">
                       {Icon && <Icon size={16} className="text-white/50" />}
@@ -85,15 +78,15 @@ function SkillsSection() {
                     <span className="text-white/[0.1] text-xs ml-auto">{items.length} skills</span>
                   </div>
 
-                  <div className="grid grid-cols-2 gap-2 relative z-10">
+                  <div className="flex flex-wrap gap-x-5 gap-y-2 relative z-10">
                     {items.map((skill, sIdx) => (
                       <motion.span
                         key={skill}
-                        initial={{ opacity: 0, y: 12 }}
+                        initial={{ opacity: 0, y: 8 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ delay: 0.25 + sIdx * 0.04, duration: 0.35 }}
-                        className="rounded-xl border border-white/[0.06] bg-white/[0.03] px-3.5 py-2 text-sm text-white/65 hover:text-white hover:bg-white/[0.07] hover:border-white/15 hover:scale-[1.02] transition-all duration-300 cursor-default truncate text-center"
+                        transition={{ delay: 0.25 + sIdx * 0.04, duration: 0.3 }}
+                        className="text-sm text-white/60 hover:text-white transition-all duration-300 cursor-default"
                       >
                         {skill}
                       </motion.span>
