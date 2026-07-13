@@ -33,6 +33,22 @@ export const projects = [
     url: 'https://parkmaster.vercel.app/',
   },
   {
+    name: 'Quỷ Liếm Online',
+    role: 'Solo Developer / Full-stack Developer',
+    time: 'January 2025 - June 2025',
+    description:
+      'Real-time multiplayer social deduction horror game. Players join rooms, receive secret roles, and survive the night cycle with WebRTC voice chat, custom Canvas particle effects, and a fully custom game engine.',
+    responsibilities: [
+      'Designed and built the entire game engine (phase management, role resolution, win conditions).',
+      'Implemented real-time multiplayer with Socket.IO (room creation, reconnect, timer sync).',
+      'Built WebRTC voice chat system with role-based private channels.',
+      'Created Canvas particle system for role-specific visual effects (fire, bubbles, hearts, glow).',
+      'Designed responsive UI with custom themes, cinematic phase transitions, and death animations.',
+    ],
+    tech: ['Node.js', 'Express', 'Socket.IO', 'WebRTC', 'Canvas 2D'],
+    url: 'https://quy-liem-online.onrender.com/',
+  },
+  {
     name: 'Company Website',
     role: 'WordPress & SEO Developer',
     time: 'August 2025 - March 2026',

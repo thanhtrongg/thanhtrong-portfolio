@@ -133,19 +133,22 @@ function ProjectsSection() {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-          {others.map((project, idx) => (
-            <motion.div
-              key={project.name}
-              variants={fadeUp}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{ delay: idx * 0.1 }}
-              className="h-full"
-            >
-              <ProjectCard project={project} />
-            </motion.div>
-          ))}
+          {others.map((project, idx) => {
+            const isLastOdd = idx === others.length - 1 && others.length % 2 !== 0
+            return (
+              <motion.div
+                key={project.name}
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ delay: idx * 0.1 }}
+                className={`h-full ${isLastOdd ? 'md:col-span-2' : ''}`}
+              >
+                <ProjectCard project={project} />
+              </motion.div>
+            )
+          })}
         </div>
       </div>
     </section>
